@@ -44,4 +44,14 @@ public class Computer {
     public void setProcessorSpeedGHz(double processorSpeedGHz) {
         this.processorSpeedGHz = processorSpeedGHz;
     }
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", ramSizeInGB=" + ramSizeInGB +
+                ", processorSpeedGHz=" + processorSpeedGHz +
+                '}';
+    }
 }
