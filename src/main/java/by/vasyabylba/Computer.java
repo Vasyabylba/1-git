@@ -5,12 +5,14 @@ public class Computer {
     private String model;
     private int ramSizeInGB;
     private double processorSpeedGHz;
+    private int yearReleased;
 
-    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz) {
+    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, int yearReleased) {
         this.brand = brand;
         this.model = model;
         this.ramSizeInGB = ramSizeInGB;
         this.processorSpeedGHz = processorSpeedGHz;
+        this.yearReleased = yearReleased;
     }
 
     public String getBrand() {
@@ -33,6 +35,10 @@ public class Computer {
         return ramSizeInGB;
     }
 
+    public int getYearReleased() {
+        return yearReleased;
+    }
+
     public void setRamSizeInGB(int ramSizeInGB) {
         this.ramSizeInGB = ramSizeInGB;
     }
@@ -45,6 +51,10 @@ public class Computer {
         this.processorSpeedGHz = processorSpeedGHz;
     }
 
+    public void setYearReleased(int yearReleased) {
+        this.yearReleased = yearReleased;
+    }
+
     @Override
     public String toString() {
         return "Computer{" +
@@ -52,6 +62,7 @@ public class Computer {
                 ", model='" + model + '\'' +
                 ", ramSizeInGB=" + ramSizeInGB +
                 ", processorSpeedGHz=" + processorSpeedGHz +
+                ", yearReleased=" + yearReleased +
                 '}';
     }
 
