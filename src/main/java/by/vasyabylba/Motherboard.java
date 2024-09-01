@@ -54,4 +54,12 @@ public class Motherboard {
     public void setMaxSupportedRAM(int maxSupportedRAM) {
         this.maxSupportedRAM = maxSupportedRAM;
     }
+
+    @Override
+    public String toString() {
+        return "Motherboard{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
