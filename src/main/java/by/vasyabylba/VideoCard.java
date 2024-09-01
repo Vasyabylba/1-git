@@ -5,12 +5,14 @@ public class VideoCard {
     private String model;
     private int vramInGB;
     private double coreClockMHz;
+    private double bandwidthGBps;
 
-    public VideoCard(String brand, String model, int vramInGB, double coreClockMHz) {
+    public VideoCard(String brand, String model, int vramInGB, double coreClockMHz, double bandwidthGBps) {
         this.brand = brand;
         this.model = model;
         this.vramInGB = vramInGB;
         this.coreClockMHz = coreClockMHz;
+        this.bandwidthGBps = bandwidthGBps;
     }
 
     public String getBrand() {
@@ -45,6 +47,14 @@ public class VideoCard {
         this.coreClockMHz = coreClockMHz;
     }
 
+    public double getBandwidthGBps() {
+        return bandwidthGBps;
+    }
+
+    public void setBandwidthGBps(double bandwidthGBps) {
+        this.bandwidthGBps = bandwidthGBps;
+    }
+
     @Override
     public String toString() {
         return "VideoCard{" +
@@ -52,6 +62,7 @@ public class VideoCard {
                 ", model='" + model + '\'' +
                 ", vramInGB=" + vramInGB +
                 ", coreClockMHz=" + coreClockMHz +
+                ", bandwidthGBps=" + bandwidthGBps +
                 '}';
     }
 }
