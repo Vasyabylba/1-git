@@ -5,12 +5,14 @@ public class CPU {
     private String model;
     private int cores;
     private double clockSpeedGHz;
+    private double tdp;
 
-    public CPU(String brand, String model, int cores, double clockSpeedGHz) {
+    public CPU(String brand, String model, int cores, double clockSpeedGHz, double tdp) {
         this.brand = brand;
         this.model = model;
         this.cores = cores;
         this.clockSpeedGHz = clockSpeedGHz;
+        this.tdp = tdp;
     }
 
     public String getBrand() {
@@ -45,6 +47,14 @@ public class CPU {
         this.clockSpeedGHz = clockSpeedGHz;
     }
 
+    public double getTdp() {
+        return tdp;
+    }
+
+    public void setTdp(double tdp) {
+        this.tdp = tdp;
+    }
+
     @Override
     public String toString() {
         return "CPU{" +
@@ -52,6 +62,7 @@ public class CPU {
                 ", model='" + model + '\'' +
                 ", cores=" + cores +
                 ", clockSpeedGHz=" + clockSpeedGHz +
+                ", tdp=" + tdp +
                 '}';
     }
 }
