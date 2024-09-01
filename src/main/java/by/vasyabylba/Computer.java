@@ -7,15 +7,15 @@ public class Computer {
     private double processorSpeedGHz;
     private int yearReleased;
     private Motherboard motherboard;
+    private VideoCard videoCard;
+    private CPU cpu;
 
-    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, int yearReleased,
-                    Motherboard motherboard) {
+    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, int yearReleased) {
         this.brand = brand;
         this.model = model;
         this.ramSizeInGB = ramSizeInGB;
         this.processorSpeedGHz = processorSpeedGHz;
         this.yearReleased = yearReleased;
-        this.motherboard = motherboard;
     }
 
     public String getBrand() {
@@ -66,6 +66,22 @@ public class Computer {
         this.motherboard = motherboard;
     }
 
+    public VideoCard getVideoCard() {
+        return videoCard;
+    }
+
+    public void setVideoCard(VideoCard videoCard) {
+        this.videoCard = videoCard;
+    }
+
+    public CPU getCpu() {
+        return cpu;
+    }
+
+    public void setCpu(CPU cpu) {
+        this.cpu = cpu;
+    }
+
     @Override
     public String toString() {
         return "Computer{" +
@@ -75,6 +91,8 @@ public class Computer {
                 ", processorSpeedGHz=" + processorSpeedGHz +
                 ", yearReleased=" + yearReleased +
                 ", motherboard=" + motherboard +
+                ", videoCard=" + videoCard +
+                ", cpu=" + cpu +
                 '}';
     }
 
