@@ -6,13 +6,15 @@ public class VideoCard {
     private int vramInGB;
     private double coreClockMHz;
     private double bandwidthGBps;
+    private String memoryType;
 
-    public VideoCard(String brand, String model, int vramInGB, double coreClockMHz, double bandwidthGBps) {
+    public VideoCard(String brand, String model, int vramInGB, double coreClockMHz, double bandwidthGBps, String memoryType) {
         this.brand = brand;
         this.model = model;
         this.vramInGB = vramInGB;
         this.coreClockMHz = coreClockMHz;
         this.bandwidthGBps = bandwidthGBps;
+        this.memoryType = memoryType;
     }
 
     public String getBrand() {
@@ -55,6 +57,14 @@ public class VideoCard {
         this.bandwidthGBps = bandwidthGBps;
     }
 
+    public String getMemoryType() {
+        return memoryType;
+    }
+
+    public void setMemoryType(String memoryType) {
+        this.memoryType = memoryType;
+    }
+
     @Override
     public String toString() {
         return "VideoCard{" +
@@ -63,6 +73,7 @@ public class VideoCard {
                 ", vramInGB=" + vramInGB +
                 ", coreClockMHz=" + coreClockMHz +
                 ", bandwidthGBps=" + bandwidthGBps +
+                ", memoryType='" + memoryType + '\'' +
                 '}';
     }
 }
