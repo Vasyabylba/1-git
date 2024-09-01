@@ -61,6 +61,8 @@ public class Motherboard {
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", chipset='" + chipset + '\'' +
+                ", ramSlots=" + ramSlots +
+                ", maxSupportedRAM=" + maxSupportedRAM +
                 '}';
     }
 }
