@@ -6,13 +6,16 @@ public class Computer {
     private int ramSizeInGB;
     private double processorSpeedGHz;
     private int yearReleased;
+    private Motherboard motherboard;
 
-    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, int yearReleased) {
+    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, int yearReleased,
+                    Motherboard motherboard) {
         this.brand = brand;
         this.model = model;
         this.ramSizeInGB = ramSizeInGB;
         this.processorSpeedGHz = processorSpeedGHz;
         this.yearReleased = yearReleased;
+        this.motherboard = motherboard;
     }
 
     public String getBrand() {
@@ -35,10 +38,6 @@ public class Computer {
         return ramSizeInGB;
     }
 
-    public int getYearReleased() {
-        return yearReleased;
-    }
-
     public void setRamSizeInGB(int ramSizeInGB) {
         this.ramSizeInGB = ramSizeInGB;
     }
@@ -51,8 +50,20 @@ public class Computer {
         this.processorSpeedGHz = processorSpeedGHz;
     }
 
+    public int getYearReleased() {
+        return yearReleased;
+    }
+
     public void setYearReleased(int yearReleased) {
         this.yearReleased = yearReleased;
+    }
+
+    public Motherboard getMotherboard() {
+        return motherboard;
+    }
+
+    public void setMotherboard(Motherboard motherboard) {
+        this.motherboard = motherboard;
     }
 
     @Override
@@ -63,6 +74,7 @@ public class Computer {
                 ", ramSizeInGB=" + ramSizeInGB +
                 ", processorSpeedGHz=" + processorSpeedGHz +
                 ", yearReleased=" + yearReleased +
+                ", motherboard=" + motherboard +
                 '}';
     }
 
