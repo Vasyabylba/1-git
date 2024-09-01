@@ -44,4 +44,14 @@ public class CPU {
     public void setClockSpeedGHz(double clockSpeedGHz) {
         this.clockSpeedGHz = clockSpeedGHz;
     }
+
+    @Override
+    public String toString() {
+        return "CPU{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", cores=" + cores +
+                ", clockSpeedGHz=" + clockSpeedGHz +
+                '}';
+    }
 }
