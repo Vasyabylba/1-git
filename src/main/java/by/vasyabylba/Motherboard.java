@@ -60,6 +60,7 @@ public class Motherboard {
         return "Motherboard{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
+                ", chipset='" + chipset + '\'' +
                 '}';
     }
 }
