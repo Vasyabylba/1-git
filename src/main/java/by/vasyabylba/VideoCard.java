@@ -44,4 +44,14 @@ public class VideoCard {
     public void setCoreClockMHz(double coreClockMHz) {
         this.coreClockMHz = coreClockMHz;
     }
+
+    @Override
+    public String toString() {
+        return "VideoCard{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", vramInGB=" + vramInGB +
+                ", coreClockMHz=" + coreClockMHz +
+                '}';
+    }
 }
