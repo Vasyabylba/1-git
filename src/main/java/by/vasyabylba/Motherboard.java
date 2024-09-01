@@ -62,6 +62,7 @@ public class Motherboard {
                 ", model='" + model + '\'' +
                 ", chipset='" + chipset + '\'' +
                 ", ramSlots=" + ramSlots +
+                ", maxSupportedRAM=" + maxSupportedRAM +
                 '}';
     }
 }
