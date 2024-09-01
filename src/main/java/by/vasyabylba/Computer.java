@@ -5,12 +5,14 @@ public class Computer {
     private String model;
     private int ramSizeInGB;
     private double processorSpeedGHz;
+    private Motherboard motherboard;
 
-    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz) {
+    public Computer(String brand, String model, int ramSizeInGB, double processorSpeedGHz, Motherboard motherboard) {
         this.brand = brand;
         this.model = model;
         this.ramSizeInGB = ramSizeInGB;
         this.processorSpeedGHz = processorSpeedGHz;
+        this.motherboard = motherboard;
     }
 
     public String getBrand() {
@@ -45,6 +47,14 @@ public class Computer {
         this.processorSpeedGHz = processorSpeedGHz;
     }
 
+    public Motherboard getMotherboard() {
+        return motherboard;
+    }
+
+    public void setMotherboard(Motherboard motherboard) {
+        this.motherboard = motherboard;
+    }
+
     @Override
     public String toString() {
         return "Computer{" +
@@ -52,6 +62,7 @@ public class Computer {
                 ", model='" + model + '\'' +
                 ", ramSizeInGB=" + ramSizeInGB +
                 ", processorSpeedGHz=" + processorSpeedGHz +
+                ", motherboard=" + motherboard +
                 '}';
     }
 
